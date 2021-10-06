@@ -20,3 +20,10 @@ func TestDecompose_Sample2(t *testing.T) {
 	actual := "amount * fee - tax + bonus / dividend"
 	assert.Equal(t, actual, expression)
 }
+
+func TestDecompose_Sample3(t *testing.T) {
+	function := "amount"
+	expression := exprxfunc.Decompose(function)
+	actual := "amount"
+	assert.Equal(t, actual, expression)
+}
