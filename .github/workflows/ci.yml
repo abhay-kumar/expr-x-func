@@ -33,5 +33,5 @@ jobs:
         with:
           tags: abhay2134/expr-x-func:latest
           file: ./example/Dockerfile
-          context: ./example
+          context: /example
           push: true
