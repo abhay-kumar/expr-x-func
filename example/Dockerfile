@@ -4,7 +4,7 @@ FROM golang:1.16-alpine
 
 WORKDIR /app
 
-RUN ls
+RUN cd example
 
 COPY go.mod ./
 COPY go.sum ./
