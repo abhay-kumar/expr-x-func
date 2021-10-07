@@ -3,12 +3,8 @@ vscode:
     - golang.go
 
 tasks:
-  - name: Install Devel
+  - name: Install Delve
     init: >
       GOBIN=/tmp/ go install github.com/go-delve/delve/cmd/dlv@master &&
       mkdir -p $GOPATH/bin/ &&
-      mv /tmp/dlv $GOPATH/bin/dlv-dap &&
-      cd /workspace/expr-x-func &&
-      go mod download &&
-      cd example &&
-      go mod download
+      mv /tmp/dlv $GOPATH/bin/dlv-dap
