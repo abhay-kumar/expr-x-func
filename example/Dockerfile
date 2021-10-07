@@ -7,6 +7,8 @@ WORKDIR /app
 COPY go.mod ./
 COPY go.sum ./
 
+RUN ls -l
+
 RUN go mod download
 
 COPY *.go ./
