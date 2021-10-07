@@ -1,4 +1,4 @@
-module expr-x-func
+module expr-x-func-test
 
 go 1.17
 
