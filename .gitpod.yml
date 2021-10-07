@@ -4,4 +4,6 @@ vscode:
 
 tasks:
   - name: Install Devel
-    command: go install github.com/go-delve/delve/cmd/dlv@latest
+    init: >
+      GOBIN=/tmp/ go install github.com/go-delve/delve/cmd/dlv@master &&
+      mv /tmp/dlv $GOPATH/bin/dlv-dap
