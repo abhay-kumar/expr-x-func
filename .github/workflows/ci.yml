@@ -34,6 +34,6 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           tags: abhay2134/expr-x-func:latest
-#          file: example/Dockerfile
+          file: ./example/Dockerfile
 #          context: ./example
           push: true
