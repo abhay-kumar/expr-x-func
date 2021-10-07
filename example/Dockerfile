@@ -9,9 +9,11 @@ COPY example/go.sum ./
 
 RUN go mod download
 
-COPY *.go ./
-RUN go build -o /example
+COPY . ./
+RUN go build -o /example example/main.go
 
 EXPOSE 8080
+
+RUN chmod +x /example
 
 CMD [ "/example" ]
